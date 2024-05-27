@@ -1,8 +1,6 @@
 ### 名称：quick-mysql
 ### 简介：一键快速安装mysql，程序无序修改自动支持分库分表，完全透明。
-### 安装说明：
-#### 有序列表
-                
+### 安装说明：   
 1. 编辑config.ini
 2. 执行 ./quickmysql -i config.ini 进行安装
 3. 删除 ./quickmysql -r config.ini 进行删除
