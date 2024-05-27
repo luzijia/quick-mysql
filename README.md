@@ -11,3 +11,5 @@
 3. 内存：最小1GB以上
 4. 本地存储：最小1GB以上
 5. 网络：最小百兆网卡
+
+### 下载地址 https://pan.baidu.com/s/1gXw37KWHhkF-KwUEgjNBzA   提取码 kyfa
