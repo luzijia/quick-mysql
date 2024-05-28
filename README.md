@@ -12,6 +12,35 @@
 4. 本地存储：最小1GB以上
 5. 网络：最小百兆网卡
 
+```jayascript
+# 基本配置
+[base]
+MysqlUser = mysql
+MysqlPassword=mysql
+MysqlPort=3306
+#mysql安装主机
+MySqlHost=192.168.1.7
+#mysql安装路径
+MysqlBasePath=/home/mysql/
+#允许哪些机器可以访问mysql,多台机器用半角逗号分隔
+MySqlUserHost=192.168.1.4,192.168.1.8
+
+# mysql 分片配置
+[shards]
+#分片数量
+Nodes = 2
+
+# 性能配置
+[sys]
+MaxConnections=100
+InnodbLockWaitTimeout=50
+InnodbBufferPoolSize=8
+InnodbLogBufferSize=6
+InnodbLogFileSize=3
+maxBinlogSize=8
+WaitTimeout=120
+```
+
 ```javascript
 [root@192 hamysql]# ./quickmysql -i config.ini
 loading config OK
